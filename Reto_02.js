@@ -46,9 +46,9 @@ const holidays = [
 ];
 function countHours(year, holidays) {
   let dias = [...holidays];
-  let algo = dias.map((dia) => new Date(`${year}/${dia}`).getDay());
+  let arrayDias = dias.map((dia) => new Date(`${year}/${dia}`).getDay());
   let cont = 0;
-  let doubles = algo.map((x) => {
+  arrayDias.map((x) => {
     if (x !== 0 && x !== 6) {
       return cont++;
     }
